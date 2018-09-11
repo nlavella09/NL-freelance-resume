@@ -62,6 +62,12 @@ gulp.task('js', function(){
   .pipe(gulp.dest('dev/assets/js'));
 });
 
+//Copy libs files to dev
+gulp.task('libs', function(){
+  gulp.src('src/libs/**')
+  .pipe(gulp.dest('dev/assets/libs'));
+});
+
 //SCSS Compile
 gulp.task('sass', function(){
   //Individual file: return gulp.src('app/scss/style.scss')
@@ -129,7 +135,7 @@ gulp.task('images', function(){
         progressive: true
       })
     ])))
-    .pipe(gulp.dest('dev/images'));
+    .pipe(gulp.dest('dev/assets/images'));
 });
 
 //clean it up

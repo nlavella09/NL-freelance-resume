@@ -1,5 +1,5 @@
+.DS_Store
 /node_modules
 /dev
 /dist
-.DS_Store
 src/.DS_Store

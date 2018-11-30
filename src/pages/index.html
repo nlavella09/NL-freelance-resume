@@ -13,27 +13,35 @@
     </script>
 
     <title>Nicholas Lavella - Interactive Developer</title>
-    <meta name="Description" content="Nicholas Lavella has over 5 years of experience, specializing in agency level contracted front-end development in the Philadelphia area.">
+    <meta name="description" content="Nicholas Lavella has over 5 years of experience, specializing in agency level contracted front-end development in the Philadelphia area.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!--build:css assets/css/main.min.css-->
-    <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--SWIPER-->
+        <link rel="stylesheet" href="assets/libs/swiper-4.3.5/dist/css/swiper.min.css">
     <!--endbuild-->
-
-    <!--SWIPER-->
-    <!--<link rel="stylesheet" href="assets/libs/swiper-4.3.5/dist/css/swiper.css">-->
-    <link rel="stylesheet" href="assets/libs/swiper-4.3.5/dist/css/swiper.min.css">
-
 </head>
 
 <body>
     <div class="grid-cont chase" data-chase-speed="500" data-scroll-depth="1">
         <section class="chase-element intro">
-            <div class="top">
-                <img src="assets/images/logo.png" class="logo">
+            <div class="top">      
+                <picture class="logo">
+                    <source srcset="assets/images/logo.webp 1x, assets/images/logo2x.webp 2x" type="image/webp"/>
+                    <img src="assets/images/logo.png" alt="Nicholas Lavella logo" />
+                 </picture>
+
                 <h1>Nicholas Lavella</h1>
                 <h2>Philadelphia based interactive developer</h2>
             </div>
-            <img src="assets/images/nicholas-lavella.jpg" class="headshot">
+
+            <picture class="headshot">
+                <source media="(max-width:480px)" srcset="assets/images/nicholas-lavella-320_1x.webp 1x, assets/images/nicholas-lavella-320_2x.webp 2x" type="image/webp"/>
+                <source srcset="assets/images/nicholas-lavella-500_1x.webp 1x, assets/images/nicholas-lavella-500_2x.webp 2x" type="image/webp"/>
+                <img srcset="assets/images/nicholas-lavella-500_1x.jpg 480w" src="assets/images/nicholas-lavella-500_1x.jpg" alt="Nicholas Lavella" />
+             </picture>
+
             <div class="inner">
                 <p>Nicholas Lavella has over 5 years of experience, specializing in agency level contracted front-end
                     development.</p>
@@ -195,18 +203,18 @@
             </div>
         </section>
     </div>
-
-    <!-- Swiper JS -->
-    <!--<script src="assets/libs/swiper-4.3.5/dist/js/swiper.js"></script>-->
-    <script src="assets/libs/swiper-4.3.5/dist/js/swiper.min.js"></script>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!--build:js assets/js/main.min.js-->
-    <script src="assets/js/nl-functions.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Swiper JS -->
+        <!--<script src="assets/libs/swiper-4.3.5/dist/js/swiper.js"></script>-->
+        <script src="assets/libs/swiper-4.3.5/dist/js/swiper.min.js"></script>
+
+        <script src="assets/js/nl-functions.js"></script>
+        <script src="assets/js/main.js"></script>
     <!--endbuild-->
 
-    <!--<script src="assets/js/countUp.js"></script>-->
+    <!-- Statcounter -->
     <script type="text/javascript">
         var sc_project = 11821017;
         var sc_invisible = 1;

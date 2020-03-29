@@ -10,6 +10,7 @@ body {
     url(../images/bg.webp) 2x
   );*/
   font-family: $mainFont;
+  font-size: 10px;
 }
 
 a {
@@ -31,6 +32,7 @@ p {
 
   strong {
     margin-bottom: 4px;
+    display: inline;
   }
 }
 
@@ -40,12 +42,21 @@ ul {
   }
 }
 
+p,
+ul {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
 h2 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   width: 100%;
   background-color: $darkGreyBackground;
   color: #fff;
@@ -117,7 +128,7 @@ h3 {
     }
 
     .inner {
-      padding: 15px 20px 30px 20px;
+      padding: 15px 15px 30px 15px;
     }
   }
 
@@ -204,7 +215,7 @@ h3 {
     }
 
     .logo {
-      width: 100px;
+      width: 90px;
       height: auto;
       margin: 8px 8px 0 50px;
       float: right;
